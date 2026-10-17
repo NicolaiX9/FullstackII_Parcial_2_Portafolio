@@ -44,7 +44,7 @@ export const TabsStructure = () => {
             defaultActiveKey="1"
             type="line"
             size="large"
-            // AQUÍ ESTÁ LA MAGIA: Título a la izquierda de las pestañas
+            //Título a la izquierda de las pestañas
             tabBarExtraContent={{
                 left: (
                     <div
@@ -60,6 +60,7 @@ export const TabsStructure = () => {
                     </div>
                 ),
             }}
+
             items={items}
             onChange={(key) => console.log('Pestaña activa:', key)}
         />
