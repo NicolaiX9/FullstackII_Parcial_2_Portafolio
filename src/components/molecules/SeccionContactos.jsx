@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Form, Input, Button, message, Typography } from 'antd';
+import {GithubOutlined} from "@ant-design/icons";
 
 const { Title } = Typography;
 
@@ -47,6 +48,14 @@ export const FormularioContacto = () => {
                     Enviar Mensaje
                 </Button>
             </Form>
+
+            <Typography.Link
+                href="https://github.com/NicolaiX9"
+                style={{ fontSize: '16px'}}
+            >
+                <GithubOutlined style={{marginTop: 20}} /> Ver perfil de GitHub
+            </Typography.Link>
+
         </Card>
     );
 };
