@@ -1,15 +1,19 @@
-import {TabsStructure} from './components/organisms/TabsStructure.jsx';
-import {DefaultFooter} from "./components/atoms/DefaultFooter.jsx";
-
+import React from 'react';
+import { ConfigProvider, theme } from 'antd';
+import { TabsStructure } from './components/organisms/TabsStructure.jsx';
+import { DefaultFooter } from './components/atoms/DefaultFooter.jsx';
 
 function App() {
     return (
-
-        <div>
-        <TabsStructure></TabsStructure>
-        <DefaultFooter></DefaultFooter>
-        </div>
-            );
+        <ConfigProvider
+            theme={{
+                algorithm: theme.darkAlgorithm,
+            }}
+        >
+            <TabsStructure />
+            <DefaultFooter />
+        </ConfigProvider>
+    );
 }
 
 export default App;

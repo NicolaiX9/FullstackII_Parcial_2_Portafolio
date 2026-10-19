@@ -3,14 +3,14 @@ import { indigoDark } from '@radix-ui/colors'
 
 const estilo = {
     background: indigoDark.indigo9,
-    color: '#fff',
     borderRadius: '8px',
-    padding: '8px 16px'
+    padding: '8px 16px',
+    border: 'none'
 }
 
-export function MiBoton({ texto, onClick }) {
+export function SubmitButton ({ texto, onClick }) {
     return (
-        <button style={estilo} className="mi-btn" onClick={onClick}>
+        <button style={estilo} type={"submit"} className="botonDefault" onClick={onClick}>
             {texto}
         </button>
     );

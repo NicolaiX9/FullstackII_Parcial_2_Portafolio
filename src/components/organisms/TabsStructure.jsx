@@ -2,6 +2,7 @@ import React from 'react';
 import { Tabs } from 'antd';
 import {SeccionPersonal} from "../molecules/SeccionPersonal.jsx";
 import {FormularioContacto} from "../molecules/SeccionContactos.jsx";
+import {SeccionContactosUseState} from "../molecules/SeccionContactosUseState.jsx";
 import {SeccionProyectos} from "../molecules/SeccionProyectos.jsx";
 import {SeccionEstudios} from "../molecules/SeccionEstudios.jsx";
 import {SeccionExperiencia} from "../molecules/SeccionExperiencia.jsx";
@@ -35,7 +36,7 @@ export const TabsStructure = () => {
         {
             key: '5',
             label: 'Contacto',
-            children: <FormularioContacto />,
+            children: <SeccionContactosUseState />,
         },
     ];
 
