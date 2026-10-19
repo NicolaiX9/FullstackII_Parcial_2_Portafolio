@@ -1,11 +1,10 @@
 import React from 'react';
 import { Tabs } from 'antd';
-import {SeccionPersonal} from "../molecules/SeccionPersonal.jsx";
-import {FormularioContacto} from "../molecules/SeccionContactos.jsx";
-import {SeccionContactosUseState} from "../molecules/SeccionContactosUseState.jsx";
-import {SeccionProyectos} from "../molecules/SeccionProyectos.jsx";
-import {SeccionEstudios} from "../molecules/SeccionEstudios.jsx";
-import {SeccionExperiencia} from "../molecules/SeccionExperiencia.jsx";
+import {SeccionPersonal} from "../organisms/SeccionPersonal.jsx";
+import {SeccionContactosUseState} from "../organisms/SeccionContactosUseState.jsx";
+import {SeccionProyectos} from "../organisms/SeccionProyectos.jsx";
+import {SeccionEstudios} from "../organisms/SeccionEstudios.jsx";
+import {SeccionExperiencia} from "../organisms/SeccionExperiencia.jsx";
 
 // Importamos los organismos de las secciones (o los marcadores de posición)
 
