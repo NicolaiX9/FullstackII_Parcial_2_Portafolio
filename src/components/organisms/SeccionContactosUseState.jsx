@@ -33,7 +33,7 @@ export const SeccionContactosUseState = () => {
 
     //dentro de los parametros del form le pasamos la función onFinish para cuando apretemos el botón submit
     return (
-        <Card style={{ marginTop: 16, backgroundColor: '#201d74'  }}>
+        <Card style={{ marginTop: 16}}>
             <Title level={3}>Redes:</Title>
 
             <Typography.Link
