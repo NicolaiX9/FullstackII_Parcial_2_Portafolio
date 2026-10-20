@@ -15,7 +15,7 @@ describe('Componente SeccionEstudios', () => {
         expect(titulo).toBeVisible();
     });
 
-    it('debe mostrar la información sobre la enseñanza media y la carrera técnica', () => {
+    it('debe mostrar la información sobre la enseñanza media y la educación superior', () => {
         // ARRANGE & ACT
         render(<SeccionEstudios />);
 
@@ -26,5 +26,7 @@ describe('Componente SeccionEstudios', () => {
         // ASSERT
         expect(textoLiceo).toBeInTheDocument();
         expect(textoCarrera).toBeInTheDocument();
+        expect(textoLiceo).toBeVisible();
+        expect(textoCarrera).toBeVisible();
     });
 });
