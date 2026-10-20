@@ -4,7 +4,7 @@ import {SeccionPersonal} from "./SeccionPersonal.jsx";
 
 
 describe('Componente SeccionPersonal', () => {
-    it('debe renderizar la pantalla de datos personales', () => {
+    it('debe renderizar la foto', () => {
         // ARRANGE & ACT: Renderizar el componente
         render(<SeccionPersonal />);
 
@@ -24,10 +24,15 @@ describe('Componente SeccionPersonal', () => {
         render(<SeccionPersonal />);
 
         // ACT: Buscar los textos descriptivos dentro del componente
-        const textoPerfil = screen.getByText(/¡Hola!, mi nombre es Nicolás Moya, me apasiona la programación y el diseño de interfaces. Me especializo en crear aplicaciones modernas y funcionales utilizando React\+Vite y Ant Design./i);
+        const textoNombre = screen.getByText(/¡Hola!, mi nombre es Nicolás Moya/i);
+        const textoHerramientas = screen.getByText(/React\+Vite y Ant Design/i);
 
         // ASSERT
-        expect(textoPerfil).toBeInTheDocument();
-        expect(textoPerfil).toBeVisible();
+        expect(textoNombre).toBeInTheDocument();
+        expect(textoNombre).toBeVisible();
+
+        expect(textoHerramientas).toBeInTheDocument();
+        expect(textoHerramientas).toBeVisible();
+
     });
 });

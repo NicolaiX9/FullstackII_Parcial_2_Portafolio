@@ -1,11 +1,12 @@
 import { renderHook, act } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
-import { useFormularioContacto } from './useFormularioContacto';
+// 1. AGREGA ESTA LÍNEA MANUALMENTE (Ajusta la ruta si no están en la misma carpeta):
+import { useFormulario } from './useFormulario';
 
-describe('useStateHook', () => {
+describe('useFormulario', () => {
     it('debe comenzar con los campos en blanco por defecto', () => {
         // ARRANGE & ACT
-        const { result } = renderHook(() => useFormularioContacto());
+        const { result } = renderHook(() => useFormulario());
 
         // ASSERT: Comprobar estado inicial
         expect(result.current.formData).toEqual({
@@ -17,7 +18,7 @@ describe('useStateHook', () => {
 
     it('debe actualizar el campo nombre con lo escrito por el usuario', () => {
         // ARRANGE
-        const { result } = renderHook(() => useFormularioContacto());
+        const { result } = renderHook(() => useFormulario());
 
         // ACT: Ejecutar la actualización envuelta en act()
         act(() => {
@@ -30,7 +31,7 @@ describe('useStateHook', () => {
 
     it('debe volver al estado inicial al reiniciar el formulario', () => {
         // ARRANGE
-        const { result } = renderHook(() => useFormularioContacto());
+        const { result } = renderHook(() => useFormulario());
 
         // ACT: Modificar datos y luego limpiar
         act(() => {

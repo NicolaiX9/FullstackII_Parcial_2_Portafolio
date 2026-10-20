@@ -43,7 +43,7 @@ export const SeccionContactosUseState = () => {
                 <GithubOutlined style={{marginTop: 20, marginBottom: 20}} /> Ver perfil de GitHub
             </Typography.Link>
 
-            <Title level={3}>Formulario de contacto: </Title>
+            <Title level={3}>Formulario de contacto:</Title>
 
             <Form layout="vertical" onFinish={onFinish}>
                 <Form.Item
