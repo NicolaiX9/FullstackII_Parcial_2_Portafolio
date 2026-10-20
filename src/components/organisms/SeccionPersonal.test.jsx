@@ -10,7 +10,7 @@ describe('Componente SeccionPersonal', () => {
 
         // ACT: Buscar el título principal
 
-        const foto = screen.getByTestId('foto')
+        const foto = screen.getByTestId('foto');
 
 
         // ASSERT: Comprobar que existe en el documento y es visible
@@ -24,7 +24,7 @@ describe('Componente SeccionPersonal', () => {
         render(<SeccionPersonal />);
 
         // ACT: Buscar los textos descriptivos dentro del componente
-        const textoPerfil = screen.getByText(/¡Hola!, mi nombre es Nicolás Moya. Me apasiona la programación y el diseño de interfaces. Me especializo en crear aplicaciones modernas y funcionales utilizando React+Vite y Ant Design./i);
+        const textoPerfil = screen.getByText(/¡Hola!, mi nombre es Nicolás Moya, me apasiona la programación y el diseño de interfaces. Me especializo en crear aplicaciones modernas y funcionales utilizando React\+Vite y Ant Design./i);
 
         // ASSERT
         expect(textoPerfil).toBeInTheDocument();

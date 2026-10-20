@@ -9,7 +9,7 @@ describe('Componente SeccionExperiencia', () => {
         render(<SeccionExperiencia />);
 
         // ACT: Buscar el título principal
-        const titulo = screen.getByText('Experiencia Laboral');
+        const titulo = screen.getByText('Experiencia laboral');
 
         // ASSERT: Comprobar que existe en el documento y es visible
         expect(titulo).toBeInTheDocument();
@@ -22,7 +22,7 @@ describe('Componente SeccionExperiencia', () => {
 
         // ACT: Buscar los textos descriptivos dentro del componente
         const textoTrabajo = screen.getByText(/Reponedor de supermercado - RetailTrust/i);
-        const textoFecha = screen.getByText(/Diciembre - Febrero 2021 /i);
+        const textoFecha = screen.getByText(/Diciembre - Febrero 2021/i);
 
         // ASSERT
         expect(textoTrabajo).toBeInTheDocument();

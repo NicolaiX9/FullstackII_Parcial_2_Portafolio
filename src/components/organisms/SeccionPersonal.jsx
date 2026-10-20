@@ -11,6 +11,7 @@ export const SeccionPersonal = () => {
                 <Avatar
                     size={180}
                     src={perfil}
+                    data-testid="foto"
                 />
                 <p style={{ maxWidth: 1000, fontSize: '20px', marginTop: 16 }}>
                     <small>
